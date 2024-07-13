@@ -2,7 +2,7 @@
 % delay-encoded cascaded ultrasound transmission within a given range of
 % delays for N pulses within a pulse train.
 
-% Charlotte Nawijn and Guillaume Lajoinie 2023-2024
+% Charlotte Nawijn and Guillaume Lajoinie, University of Twente, 2023-2024
 
 
 %% general
