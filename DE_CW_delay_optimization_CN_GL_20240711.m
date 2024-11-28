@@ -55,7 +55,7 @@ elseif strcmp(S.probe, 'L12-3v')
     T.transmit_time = 0: 1/T.f_sampling: (length(transmit_wvfm)-1)/T.f_sampling;
 
 elseif strcmp(S.probe, 'L22-8v')
-    % L12-3: (PulseCode 1 -5 7 9 1; 5 -9 7 5 1) (last index of row is how many times repeated)
+    % L22-8v: (PulseCode 1 -3 4 5 1; 4 -3 0 0 1) (last index of row is how many times repeated)
     path_transmit = 'single_pulses\L22-8v\';
     transmit_data = load([path_transmit 'L22_8v_infoTW.mat'], 'TW');
     transmit_wvfm_temp = transmit_data.TW.Wvfm1Wy;
@@ -87,7 +87,7 @@ elseif strcmp(S.probe, 'L12-3v')      % Trans.Bandwidth = 4.03 to 11.05 MHz
 
     P.f_driving = 8.9290e6;             
 
-elseif strcmp(S.probe, 'L22-8v')      % Trans.Bandwidth = 4.03 to 11.05 MHz
+elseif strcmp(S.probe, 'L22-8v')      
     P.f_ROI(1) = 8e6;
     P.f_ROI(2) = 22e6;
 
